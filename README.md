@@ -36,7 +36,7 @@ This project is a **coursework prototype** showing how a fungible token could re
 - **ISIN:** USY68613AB73 (Reg S line, 10-year tranche)
 - **Product form:** USD sovereign global sukuk
 - **Token design:** fungible token (ERC-20)
-- **Conceptual backing:** fractional beneficial-interest certificate over an off-chain holding
+- **Conceptual backing:** fractional ownership certificate over an off-chain holding (INDOIS034)
 
 ## Token design assumptions
 
