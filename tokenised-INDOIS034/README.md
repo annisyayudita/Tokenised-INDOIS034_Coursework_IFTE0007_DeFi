@@ -1,25 +1,25 @@
-# Tokenised INDOIS34 Coursework
+# Tokenised INDOIS034 Coursework
 
-This repository contains a proof of concept of a smart contract for a tokenised fractional ownership certificate referencing **Indonesia's 5.20% Global Sukuk (INDOIS) due 2 July 2034**.
+This repository contains a proof of concept of a smart contract for a tokenised fractional ownership certificate referencing **Indonesia's 5.20% Global Sukuk due 02 July 2034 (INDOIS034)**.
 
 ## Scope
 
 This project is a **coursework prototype** showing how a fungible token could represent fractional ownership in an **off-chain holding** of the selected INDOIS 2034 series.
 
-> This smart contract it is a testnet proof of concept for a fungible digital certificate representing fractional ownership in an off-chain holding of Indonesia's 5.20% Global Sukuk (INDOIS) due 2 July 2034.
+> The smart contract  is a testnet proof of concept for a fungible digital certificate representing fractional ownership in an off-chain holding of Indonesia's 5.20% Global Sukuk due 02 July 2034 (INDOIS034).
 
 ## Overview
 
 | Parameter | Value |
 |---|---|
-| Token Name | Tokenized INDOIS034 |
-| Symbol | tINDOIS34 |
-| Standard | ERC-20 (OpenZeppelin v5) |
-| Decimals | 0 (1 token = 1 whole unit) |
-| 1 Token | USD 100 face-value exposure |
-| Coupon | 5.20% p.a., semi-annual |
-| Maturity | 2 July 2034 |
-| Network | Ethereum Sepolia Testnet |
+| **Token Name** | Tokenized INDOIS034 |
+| **Symbol** | tINDOIS34 |
+| **Standard** | ERC-20 (OpenZeppelin v5) |
+| **Decimals** | 0 (1 token = 1 whole unit) |
+| **1 Token** | USD 100 face-value exposure |
+| **Coupon** | 5.20% p.a., semi-annual |
+| **Maturity** | 2 July 2034 |
+| **Network** | Ethereum Sepolia Testnet |
 
 ## Deployed testnet contract
 
@@ -43,12 +43,12 @@ This project is a **coursework prototype** showing how a fungible token could re
 - **1 token = USD 100 face-value exposure** to the underlying sukuk
 - Traditional market access is assumed to remain much higher than this tokenised threshold
 - The underlying sukuk pays **semi-annually**
-- The smart contract uses **ETH only as a mock testnet settlement asset** for demo purposes
+- The smart contract uses **ETH as a mock testnet settlement asset** 
 
 ## Contract features
 
 ### Core features
-- ERC-20 fungible token with **0 decimals** for easier coursework testing
+- ERC-20 fungible token with **0 decimals** 
 - **AccessControl** with separate roles: `DEFAULT_ADMIN`, `DISTRIBUTOR`, `PAUSER`
 - Admin minting backed by hypothetical off-chain holdings
 - **Whitelist transfer restrictions** (compliance gated)
@@ -56,7 +56,7 @@ This project is a **coursework prototype** showing how a fungible token could re
 - **ReentrancyGuard** — protection on all ETH sending functions
 
 ### Distribution features
-- `depositDistribution(memo)` — admin deposits mock ETH to simulate a semi-annual profit event
+- `depositDistribution(memo)` — admin deposits ETH to simulate a semi-annual profit event
 - `claimDistribution()` — token holders claim their pro rata share; **ETH transfers on-chain**
 - `withdrawableProfitOf(account)` / `accumulativeProfitOf(account)` — view claimable and total accumulated profit
 - `accruedProfitPerTokenUSD18()` — informational daily accrual display, capped at one coupon interval (182 days)
@@ -64,8 +64,8 @@ This project is a **coursework prototype** showing how a fungible token could re
 - **Coupon correction logic** (`magnifiedProfitCorrections`) — prevents double claiming when tokens are transferred after a distribution
 
 ### Redemption features
-- `setRedemptionRateWeiPerToken(weiPerToken)` — admin sets mock maturity redemption rate
-- `fundRedemptionPool()` — admin funds mock principal pool in ETH
+- `setRedemptionRateWeiPerToken(weiPerToken)` — admin sets maturity redemption rate
+- `fundRedemptionPool()` — admin funds principal pool in ETH
 - `redeemAtMaturity(tokenAmount)` — holders burn tokens and receive ETH payout; **auto claims any pending profit first**
 
 ## Contract architecture
@@ -111,14 +111,12 @@ TokenizedIndois2034 (ERC-20 + AccessControl + Pausable + ReentrancyGuard)
 tokenised-indois-2034/
 ├── contracts/
 │   └── TokenizedIndois2034.sol    — main Solidity smart contract
-├── screenshots/
-│   └── README.txt                 — Screenshots for smart contract address (CA) implementation on a test network
+├── screenshots/                   — Screenshots for smart contract address (CA) implementation on a test networ
+│   └── README.txt               
 └── README.md
 ```
 
 ## Constructor inputs
-
-The constructor needs two arguments:
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -131,8 +129,8 @@ The contract was developed in Remix. Preliminary logic checks could be performed
 
 1. Create a MetaMask wallet & account
 2. Switch MetaMask to Sepolia
-3. Get free Sepolia ETH from a faucet ([Google Cloud Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
-3. Open Remix, change environment to **Browser Extension** and select **Sepolia Testnet - MetaMask**
+3. Get free Sepolia ETH from a faucet ([Google Cloud Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia))
+3. Open Remix, change environment to **Browser Extention** and select **Sepolia Testnet - MetaMask**
 4. Deploy the contract (use `2035411200` for realistic 2034 maturity)
 5. Whitelist a second wallet
 6. Mint tokens
