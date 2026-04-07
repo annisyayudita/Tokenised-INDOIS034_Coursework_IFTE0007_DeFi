@@ -97,9 +97,8 @@ contract TokenizedIndois2034 is ERC20, AccessControl, Pausable, ReentrancyGuard 
         emit WhitelistUpdated(admin, true);
     }
 
-    // ---------------------------------
+    
     // ERC-20 display settings
-    // ---------------------------------
 
     /// @notice 0 decimals to make demo/testing easier:
     ///         1 token = 1 whole claim unit = USD 100 face value exposure.
@@ -107,9 +106,7 @@ contract TokenizedIndois2034 is ERC20, AccessControl, Pausable, ReentrancyGuard 
         return 0;
     }
 
-    // ---------------------------------
     // Admin / compliance
-    // ---------------------------------
 
     function setWhitelist(address account, bool approved)
         public
@@ -161,9 +158,7 @@ contract TokenizedIndois2034 is ERC20, AccessControl, Pausable, ReentrancyGuard 
         emit CouponClockUpdated(newTimestamp);
     }
 
-    // ---------------------------------
     // Profit distribution
-    // ---------------------------------
 
     /**
      * @notice Deposit profit in ETH for token holders.
@@ -259,9 +254,7 @@ contract TokenizedIndois2034 is ERC20, AccessControl, Pausable, ReentrancyGuard 
         return withdrawable;
     }
 
-    // ---------------------------------
     // Informational accrual display only
-    // ---------------------------------
 
     /**
      * @notice Informational accrued profit per 1 token since the last coupon clock reset.
@@ -297,9 +290,7 @@ contract TokenizedIndois2034 is ERC20, AccessControl, Pausable, ReentrancyGuard 
         return annualProfitPerTokenUSD18 / 2;
     }
 
-    // ---------------------------------
     // Redemption
-    // ---------------------------------
 
     /**
      * @notice Set the mock ETH redemption amount for 1 token.
@@ -354,9 +345,7 @@ contract TokenizedIndois2034 is ERC20, AccessControl, Pausable, ReentrancyGuard 
         emit Redeemed(msg.sender, tokenAmount, payoutWei);
     }
 
-    // ---------------------------------
     // Transfer restrictions + coupon correction logic
-    // ---------------------------------
 
     function _update(address from, address to, uint256 value)
         internal
