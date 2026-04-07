@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
  * @title TokenizedIndois2034
  * @notice Coursework proof-of-concept:
  *         a fungible token representing fractional ownership
- *         in an off-chain holding of Indonesia's 5.20% Global Sukuk (INDOIS) due 2 July 2034.
+ *         in an off-chain holding of Indonesia's 5.20% Global Sukuk (Sharia/Islamic Bond) due 2 July 2034 (INDOIS034).
  *
  *         DEMO NOTE:
  *         - The real underlying sukuk pays in USD and distributes semi-annually.
