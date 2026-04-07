@@ -1,18 +1,18 @@
-# Tokenised INDOIS034 Coursework
+# Tokenised INDOIS34 Coursework
 
-This repository contains a proof of concept of a smart contract for a tokenised fractional ownership certificate referencing **Indonesia's 5.20% Global Sukuk (Sharia/Islamic Bond) due 02 July 2034 (INDOIS034)**.
+This repository contains a proof of concept of a smart contract for a tokenised fractional ownership certificate referencing **Indonesia's 5.20% Global Sukuk (Sharia/Islamic Bond) due 02 July 2034 (INDOIS34)**.
 
 ## Scope
 
 This project is a **coursework prototype** showing how a fungible token could represent fractional ownership in an **off-chain holding** of the selected INDOIS 2034 series.
 
-> The smart contract  is a testnet proof of concept for a fungible digital certificate representing fractional ownership in an off-chain holding of Indonesia's 5.20% Global Sukuk (Sharia/Islamic Bond) due 02 July 2034 (INDOIS034).
+> The smart contract  is a testnet proof of concept for a fungible digital certificate representing fractional ownership in an off-chain holding of Indonesia's 5.20% Global Sukuk (Sharia/Islamic Bond) due 02 July 2034 (INDOIS34).
 
 ## Overview
 
 | Parameter | Value |
 |---|---|
-| **Token Name** | Tokenized INDOIS034 |
+| **Token Name** | Tokenized INDOIS34 |
 | **Symbol** | tINDOIS34 |
 | **Standard** | ERC-20 (OpenZeppelin v5) |
 | **Decimals** | 0 (1 token = 1 whole unit) |
@@ -32,11 +32,11 @@ This project is a **coursework prototype** showing how a fungible token could re
 
 ## Underlying reference asset
 
-- **Asset:** Indonesia Global Sukuk (Sharia/Islamic Bond) 5.20% due 2 July 2034 (INDOIS034)
+- **Asset:** Indonesia Global Sukuk (Sharia/Islamic Bond) 5.20% due 2 July 2034 (INDOIS34)
 - **ISIN:** USY68613AB73 (Reg S line, 10-year tranche)
 - **Product form:** USD sovereign global sukuk
 - **Token design:** fungible token (ERC-20)
-- **Conceptual backing:** fractional ownership certificate over an off-chain holding (INDOIS034)
+- **Conceptual backing:** fractional ownership certificate over an off-chain holding (INDOIS34)
 
 ## Token design assumptions
 
