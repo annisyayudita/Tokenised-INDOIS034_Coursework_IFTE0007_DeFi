@@ -151,7 +151,7 @@ The contract was developed in Remix. Preliminary logic checks could be performed
 | 7 | Transfer transaction | `7_transfer_transaction.png` |
 | 8 | Distribution deposit transaction | `8_distribution_deposit.png` |
 | 9 | Profit claim transaction | `9_claim_distribution.png` |
-| 10 | Sepolia block explorer page | `10_sepolia_block_explorer.png` |
+| 10 | Sepolia block explorer page and tINDOIS34 token tracker page | `10a_sepolia_block_explorer.png` `10b_sepolia_tINDOIS34_token_tracker.png` |
 
 ## Coursework reference
 
