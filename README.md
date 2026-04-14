@@ -120,7 +120,7 @@ tokenised-indois-2034/
 
 | Parameter | Type | Description |
 |---|---|---|
-| `_maturityTimestamp` | `uint256` | Unix timestamp in the future (e.g. `2035411200` for 2 July 2034) |
+| `_maturityTimestamp` | `uint256` | Unix timestamp in the future (`2035411200` for 2 July 2034) |
 | `admin` | `address` | Admin wallet address (receives all roles + whitelist) |
 
 ## Testing and deployment workflow of smart contract address (CA) on a test network
